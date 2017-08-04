@@ -10,7 +10,7 @@ export default class Landing extends React.Component {
   _getFace () {
     let dateNow = new Date()
     let sashaBday = new Date("2017-08-10")
-    if (dateNow.getTime() >= sashaBday.getTime()) {
+    if (dateNow.getTime() < sashaBday.getTime()) {
       this.setState({
         message: 'It sure is!'
       })
